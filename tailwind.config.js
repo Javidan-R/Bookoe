@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      "colors": {
+        "orange": "#ff754c",
+        "antiquewhite": "#ffe7d4" ,
+        "lavender": "#d9ebfd" 
+        }, 
+        
+    },
+    fontSize: {
+      "inherit": "inherit"
+      } 
   },
   plugins: [],
 }
