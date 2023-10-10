@@ -35,7 +35,7 @@ const services = [
 
 export const MainServices: FC = () => {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 pt-10 pb-10 ">
             {services.map((service, index) => (
                 <div key={index} className="bg-white flex flex-row items-center gap-2 w-full">
                     <div className="rounded-[14px] bg-gray-300 w-[120px] h-[60px] flex">
