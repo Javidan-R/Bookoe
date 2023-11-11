@@ -42,7 +42,7 @@ export const SpecialOffers: FC = () => {
                         <Title titleName={offer.titleName} />
                         <Tag tagName={offer.tagName.map((tag, index) => (
                             <li key={index}
-                                style={{ width: '200px', margin: 'auto', cursor: 'pointer', listStyle: 'none' }}>
+                                style={{ width: '2rem', margin: 'auto', cursor: 'pointer', listStyle: 'none' }}>
                                 {tag}
                             </li>
                         ))} />
@@ -51,12 +51,12 @@ export const SpecialOffers: FC = () => {
                         <div className='flex justify-between pt-4'>
                             <Button
                                 style={{ color: '#6C5DD3' }}
-                                className="w-40 h-15 bg-gray-200  text-purple-500 font-bold py-2 px-4 rounded-xl "
+                                className=" bg-gray-200  text-purple-500 font-bold py-2 px-4 rounded-xl "
                             >
                                 Add To Card
                             </Button>
                             <Button
-                                className="w-40 h-15   text-purple-500 font-bold py-2 px-4 rounded-xl "
+                                className="   text-purple-500 font-bold py-2 px-4 rounded-xl "
                             >
                                 20$
                             </Button>

@@ -28,7 +28,7 @@ export const Popular: FC = () => {
                 <div className='flex justify-between pt-6'>
                     <div className=''>
                         <b className=" text-[36px] font-cairo text-darkpurple text-left">Recomended For You</b>
-                        <div className="pt-2 mt-2 text-[14px] font-open-sans text-darkpurple text-left inline-block w-[512px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div className="pt-2 mt-2 text-[14px] font-open-sans text-darkpurple text-left inline-block w-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                     </div>
                     <img src={circles} alt="" className='w-full object-coever' />
                 </div>

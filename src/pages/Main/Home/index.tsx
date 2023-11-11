@@ -32,7 +32,7 @@ export const Home: FC = () => {
 							lineHeight: "normal",
 						}} >Special Offers</h3>
 						<p style={{
-							width: "650px",
+							width: "80%",
 							color: "var(--DarkPurple, #11142D)",
 							textAlign: "center",
 							fontFamily: "Open Sans",
@@ -40,6 +40,7 @@ export const Home: FC = () => {
 							fontStyle: "normal",
 							fontWeight: 400,
 							lineHeight: "normal",
+							margin: 'auto'
 						}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -47,52 +48,51 @@ export const Home: FC = () => {
 				</div>
 				<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 pt-12'>
 					<SpecialOffers />
-					</div>
+				</div>
 			</div>
 			<section>
 				{/* FLASH SALE */}
 				<div className='flex justify-center mt-8	'>
 					<div>
 						<div className="text-[#11142d] text-center font-['Cairo'] text-[3.125rem] font-bold leading-[normal]">Flash Sale</div>
-						<div className="Sans'] flex-shrink-0 w-[554px] h-16 text-[#11142d] text-center font-['Open leading-[normal]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-						<div className="flex-shrink-0 w-[505px] h-[7.5rem] rounded-[0.875rem] border border-[#f0eeff] bg-white" >
+						<div className="Sans'] flex-shrink-0 w-80 h-16 text-[#11142d] text-center font-['Open leading-[normal]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+						<div className="flex-shrink-0 w-80 h-[7.5rem] rounded-[0.875rem] border border-[#f0eeff] bg-white" >
 							DAYS
 						</div>
 					</div>
 
 				</div>
 				<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 pt-12'>
-					<FlashCard  />
-					
+					<FlashCard />
+
 				</div>
 
 			</section>
 
-			<section>
+			<section className='w-full flex justify-center items-center'>
 				{/* Featured Books */}
-				<div className='grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 pt-12 pb-12 mb-12'>
+				<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 pt-12 pb-12 flex-shrink-0 m-auto'>
 					<div>
 						{/* Featured Book */}
 						<div className="text-[#11142d] font-['Cairo'] text-[3.125rem] font-bold leading-[normal]">Featured Books</div>
-						<div className="Sans'] w-[453px] text-[#11142d] font-['Open leading-[normal]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
+						<div className="font-[Sans'] w-80 text-[#11142d] font-['Open leading-[normal]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
 
-						<FeaturedBooks 
-						image='sdfsd'
-						bookName='Battle Drive'
-						title='Synopsis'
-						writtenBy='Kevin Smiley'
-						 price={84.78} year={2019} oldPrice={90.00}
-						tagName='SPORTS, DRAMA' 
-						description='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+						<FeaturedBooks
+							image='sdfsd'
+							bookName='Battle Drive'
+							title='Synopsis'
+							writtenBy='Kevin Smiley'
+							price={84.78} year={2019} oldPrice={90.00}
+							tagName='SPORTS, DRAMA'
+							description='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 						/>
 					</div>
-					<div>
+					<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6'>
 						<BooksComp />
 					</div>
 				</div>
-
-
 			</section>
+
 
 
 

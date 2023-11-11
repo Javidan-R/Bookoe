@@ -15,11 +15,11 @@ interface FeaturedBooksProps {
 export const FeaturedBooks:FC<FeaturedBooksProps> = ({ image, bookName, title, tagName, writtenBy, year, description, price, oldPrice }) => {
   return (
     <div className="flex-shrink-0 w-full h-[482px] rounded-[0.875rem] bg-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 " >
-    <div className="w-[16.25rem] h-[400px] rounded-[1.25rem] bg-[#c4c4c4]" >
+    <div className="w-[15.25rem] h-[400px] rounded-[1.25rem] bg-[#c4c4c4]" >
         <img src={image} alt={bookName} />
     </div>
-    <div className="w-[16.25rem] h-[400px] rounded-[1.25rem]  " >
-        <div>
+    <div className="w-[15.25rem] h-[400px] rounded-[1.25rem]  " >
+        <div className='dflex justify-between'>
             <div>
                 <FaSalesforce />
             </div>
@@ -28,8 +28,8 @@ export const FeaturedBooks:FC<FeaturedBooksProps> = ({ image, bookName, title, t
                 <div className="Sans'] text-[#6c5dd3] font-['Open leading-[normal]">{tagName}</div>
             </div>
         </div>
-        <div className="['Sans'] w-[21.4375rem] text-[#11142d] font-['Open text-lg font-semibold leading-6">{title}</div>
-        <div className="['Sans'] w-[22.0625rem] text-[#11142d] font-['Open text-sm leading-5">{description}</div>
+        <div className="['Sans'] w-[11.4375rem] text-[#11142d] font-['Open text-lg font-semibold leading-6">{title}</div>
+        <div className="['Sans'] w-[15.0625rem] text-[#11142d] font-['Open text-sm leading-5">{description}</div>
         <div className='dflex justify-between'>
             <div className='dflex justify-between'>
                 <div className="['Sans'] text-[#aaa] font-['Open text-sm leading-[normal]">Writen by</div>
