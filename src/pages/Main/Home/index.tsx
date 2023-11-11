@@ -87,6 +87,7 @@ export const Home: FC = () => {
 						/>
 					</div>
 					<div>
+						<BooksComp />
 					</div>
 				</div>
 
