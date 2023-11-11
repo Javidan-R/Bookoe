@@ -1,7 +1,7 @@
 
 import { ReactNode, FC } from 'react';
 import { Login, Logo, Menus, Search, SignUp } from '../../../components/Header';
-import { BooksCategories, FooterAbout, OutStore, QuickLinks } from '../../../components/Footer';
+import { BooksCategories, FooterAbout, OutStore, QuickLinks, Subscribe } from '../../../components/Footer';
 import { FollowUs } from '../../../components/Footer/FollowUs';
 import { Home } from '../../../pages';
 import { Outlet } from 'react-router-dom';
@@ -34,6 +34,8 @@ export const MainLayout: FC<MainLayoutProps> = ({ children }) => {
       </main>
 
       <footer className="p-4 md:p-6 xl:p-12 ">
+      <Subscribe />
+
         <div className="container mx-auto md:p-0 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="w-full md:w-1/4 mb-6 md:mb-0 mr-5">
             <Logo className="w-26 h-26 md:w-auto md:h-auto object-contain" />
