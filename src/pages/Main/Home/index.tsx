@@ -8,6 +8,9 @@ import { SpecialOffers } from '../../../components/SpecialOffersComponent';
 import { FlashCard } from '../../../components/FlashCardComponent';
 import { FeaturedBooks } from './MainBanner/FeaturedBooks';
 import { BooksComp } from '../../../components/BooksComp';
+import { Testimonials } from './MainBanner/Testimonials';
+import { BookSale } from './MainBanner/BookSale';
+import { LatestNews } from './MainBanner/LatestNews';
 
 export const Home: FC = () => {
 	return (
@@ -68,12 +71,9 @@ export const Home: FC = () => {
 				</div>
 
 			</section>
-
-			<section className='w-full flex justify-center items-center'>
-				{/* Featured Books */}
-				<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 pt-12 pb-12 flex-shrink-0 m-auto'>
-					<div>
-						{/* Featured Book */}
+			{/* <section className='w-full flex justify-center items-center flex-shrink-0  h-[851px] bg-[#f2f0fe '>
+				<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 pt-12 pb-12 '>
+					<div className=''>
 						<div className="text-[#11142d] font-['Cairo'] text-[3.125rem] font-bold leading-[normal]">Featured Books</div>
 						<div className="font-[Sans'] w-80 text-[#11142d] font-['Open leading-[normal]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
 
@@ -91,7 +91,12 @@ export const Home: FC = () => {
 						<BooksComp />
 					</div>
 				</div>
-			</section>
+			</section> */}
+			<Testimonials/>
+			<BookSale />
+			<LatestNews />
+
+			
 
 
 
