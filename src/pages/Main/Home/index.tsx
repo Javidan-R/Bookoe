@@ -1,16 +1,17 @@
 import { FC } from 'react';
 import MainBanner from './MainBanner';
 import Features from './Features';
-import { MainServices } from './MainBanner/MainServices';
-import { Recomended } from './MainBanner/Recomanded';
-import { Popular } from './MainBanner/Popular';
+import { MainServices } from './MainServices';
+import { Recomended } from './Recomanded';
+import { Popular } from './Popular';
 import { SpecialOffers } from '../../../components/SpecialOffersComponent';
 import { FlashCard } from '../../../components/FlashCardComponent';
-import { FeaturedBooks } from './MainBanner/FeaturedBooks';
+import { FeaturedBooks } from './FeaturedBooks';
 import { BooksComp } from '../../../components/BooksComp';
-import { Testimonials } from './MainBanner/Testimonials';
-import { BookSale } from './MainBanner/BookSale';
-import { LatestNews } from './MainBanner/LatestNews';
+import { Testimonials } from './Testimonials';
+import { BookSale } from './BookSale';
+import { LatestNews } from './LatestNews';
+import { NewsLetter } from './NewsLetter';
 
 export const Home: FC = () => {
 	return (
@@ -95,6 +96,7 @@ export const Home: FC = () => {
 			<Testimonials/>
 			<BookSale />
 			<LatestNews />
+			<NewsLetter />
 
 			
 

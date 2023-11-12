@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import circles from '../../../../../assets/images/cirlces.svg';
+import circles from '../../../../assets/images/cirlces.svg';
 interface PopularProps {
     image: string;
 }

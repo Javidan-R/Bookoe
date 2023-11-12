@@ -1,6 +1,6 @@
 import React,{FC} from 'react'
 import { FaSalesforce } from 'react-icons/fa'
-import Button from '../../../../../Atoms/Button'
+import Button from '../../../../Atoms/Button'
 interface FeaturedBooksProps {
     image: string,
     bookName: string,

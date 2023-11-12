@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { BestSellerBanner } from './BestSellerBanner';
+import { BestSellerBanner } from '../BestSellerBanner';
 
 const MainBanner: FC = () => {
   return (

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const LatestNewsComponent = () => {
   return (
-    <div>
+    <div className='m-auto'>
       <div className="flex-shrink-0 w-[18rem] h-[13.125rem] rounded-[0.625rem] bg-[#c4c4c4]" >
         <img src="" alt=""className="w-full h-full object-cover rounded-[0.875rem]" />
       </div>

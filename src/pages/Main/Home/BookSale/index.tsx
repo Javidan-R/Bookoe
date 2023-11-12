@@ -1,5 +1,5 @@
 import React from 'react'
-import { BookSaleComponent } from '../../../../../components/BookSaleComponent'
+import { BookSaleComponent } from '../../../../components/BookSaleComponent'
 
 export const BookSale = () => {
     return (

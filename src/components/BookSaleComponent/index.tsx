@@ -6,7 +6,7 @@ import { Star } from '../../Atoms/Star'
 export const BookSaleComponent = () => {
     return (
         <>
-            <div className='flex-shrink-0 w-[11rem] h-[30rem] '>
+            <div className='flex-shrink-0 w-[11rem] sm:w-[13rem] h-[30rem] m-auto '>
                 <div className="relative m-auto">
                     <div className="flex-shrink-0  w-[11rem]  h-[18rem] rounded-[0.875rem] bg-[#c4c4c4]">
                         <img src="" alt="" className="w-full h-full object-cover rounded-[0.875rem]" />
