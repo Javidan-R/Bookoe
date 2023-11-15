@@ -5,6 +5,7 @@ import { BooksCategories, FooterAbout, OutStore, QuickLinks, Subscribe } from '.
 import { FollowUs } from '../../../components/Footer/FollowUs';
 import { Home } from '../../../pages';
 import { Outlet } from 'react-router-dom';
+import { Navbar } from '../../../pages/Main/Home/NavBar';
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -13,21 +14,7 @@ interface MainLayoutProps {
 export const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return (
     <>
-      <header className="p-4 md:p-6 xl:p-12">
-        <div className="container-xl mx-auto p-4 md:p-0 flex flex-col md:flex-row md:justify-between md:items-center">
-          <Logo className="w-32 h-32 md:w-auto md:h-auto object-contain" />
-          <div className="flex flex-col md:flex-row justify-center items-center w-full md:w-auto mt-4 md:mt-0 md:ml-4">
-            <Menus />
-            <Search />
-          </div>
-
-          <div className="flex mt-4 md:mt-0 space-x-4">
-            <Login />
-            <SignUp />
-          </div>
-        </div>
-      </header>
-
+      <Navbar/>
       <main className="p-4 md:p-6 xl:p-12">
         {children}
         <Outlet/>

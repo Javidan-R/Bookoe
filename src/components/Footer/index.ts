@@ -1,4 +1,4 @@
-export * from '../Header/Logo';
+export * from '../LogoComponent';
 export * from './FooterAbout';
 export * from './FollowUs';
 export * from './BooksCategories';
