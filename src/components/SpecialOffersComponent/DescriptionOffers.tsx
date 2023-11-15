@@ -4,7 +4,7 @@ interface DecProps{
 }
 export const DescriptionOffers:FC<DecProps> = ({descName}) => {
   const descStyle = {
-    width: "352.73px",
+    width: "20rem",
     height: "120px",
     flexShrink: 0,
     color: "rgba(0, 0, 0, 0.80)",

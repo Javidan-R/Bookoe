@@ -47,7 +47,7 @@ export const Recomended: FC = () => {
                         </div>
                          
                     </div>
-                    <img src={circles} alt="" className="w-[10rem] " />
+                    <img src={circles} alt="" className="w-[6rem] absolute  right-10 top-[5rem] " />
                 </div>
                 <div className=" pt-6 md:pt-8 lg:pt-10 xl:pt-12 pb-6 relative">
                     <svg

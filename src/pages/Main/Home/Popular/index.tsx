@@ -38,7 +38,7 @@ export const Popular: FC = () => {
                         </div>
                          
                     </div>
-                    <img src={circles} alt="" className="w-[10rem] " />
+                    <img src={circles} alt="" className="w-[4rem] absolute  right-10 top-[10rem] transform rotate-90" />
                 </div>
                 <div className=" pt-6 md:pt-8 lg:pt-10 xl:pt-12 pb-6 relative"  >
                     <svg
