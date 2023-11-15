@@ -9,9 +9,10 @@ export const LatestNewsComponent = () => {
       <div className="w-[18rem] text-[#11142d] font-['Cairo'] text-lg font-semibold leading-[normal] mt-2">
         Why reading is important for our children?
       </div>
-      <div className="w-[18rem] text-black/50 font-['Open text-sm leading-[normal] mt-4 mb-4">
+      <div className="w-[18rem] text-black/50 font-['Open text-sm leading-[normal] mt-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...
       </div>
+      <div className="Sans'] text-[#6c5dd3] font-['Open text-sm leading-[normal]  mb-6">Continue reading</div>
       <div className='flex justify-start gap-4' > 
         <div>
           <svg width={54} height={54} viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">

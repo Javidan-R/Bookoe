@@ -53,15 +53,15 @@ export const FlashCard: FC = () => {
     <>
       {flashSale.length > 0 ? (
         flashSale.map((fs, index) => (
-          <div key={index} className="flex-shrink-0 w-[13.3125rem] h-[450px] rounded-[0.875rem] bg-white m-auto">
+          <div key={index} className="flex-shrink-0 content-strech w-[13.3125rem] h-[450px] rounded-[0.875rem] bg-white m-auto">
             <div className="flex-shrink-0 w-[13.3125rem] h-[20.0625rem] rounded-[1.25rem] bg-[#c4c4c4] dflex justify-center">
               <img src={fs.image} alt={fs.title} />
             </div>
-            <div className="text-[#11142d] text-center font-['Cairo'] text-xl font-bold leading-[normal]">{fs.title}</div>
-            <div className=" font-[Sans'] text-[#6c5dd3] text-center font-['Open text-sm leading-[normal]">{fs.tag.join(', ')}</div>
-            <div className='w-30 flex justify-around'>
-              <div className="text-[#6c5dd3] font-['Cairo'] text-[1.75rem] font-bold leading-[normal]">{fs.price}</div>
-              <div className="text-[#aaa] font-['Cairo'] text-xl font-semibold leading-[normal]">{fs.oldPrice}</div>
+            <div className="text-[#11142d] text-center font-['Cairo'] text-xl font-bold leading-[normal] mt-4">{fs.title}</div>
+            <div className=" font-[Sans'] text-[#6c5dd3] text-center font-['Open text-sm leading-[normal] mb-4">{fs.tag.join(', ')}</div>
+            <div className='w-30 flex justify-around items-center'>
+              <div className="text-[#6c5dd3] font-['Cairo'] text-[1.75rem] font-bold leading-[normal]">${fs.price}</div>
+              <div className="text-[#aaa] font-['Cairo'] text-xl font-semibold leading-[normal]">${fs.oldPrice}</div>
             </div>
           </div>
         ))

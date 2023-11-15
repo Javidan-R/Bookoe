@@ -12,9 +12,9 @@ import circles from '../../../../assets/images/cirlces.svg';
 
 const MainBanner: FC = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-4 gap-6 pt-2  '>
+    <div className='grid grid-cols-1 md:grid-cols-4 gap-6 pt-2'>
       {/* Left Area (75%) */}
-      <div className='md:col-span-3 bg-gray-100 rounded-3xl p-10 relative h-[35rem] rounded-3xl bg-[#edfdec]'>
+      <div className='hidden md:block xl:block md:col-span-3 bg-gray-100 rounded-3xl p-10 relative md:h-[35rem] bg-[#edfdec]'>
         {/* First SVG - Top Right */}
         <svg
           width={350}
@@ -26,10 +26,10 @@ const MainBanner: FC = () => {
         >
           <circle cx={120} cy={50} r={88} fill="#F5DCC8" />
         </svg>
-        <img src={circles} alt="" className="w-[4rem] absolute top-10 left-10 " />
+        <img src={circles} alt="" className="w-[4rem] absolute top-10 left-10  transform rotate-90 " />
 
         {/* Main Content */}
-        <div className='md:max-w-md p-10 absolute z-10 w-full md:w-[70%] lg:w-[60%] xl:w-[75%]'>
+        <div className='md:max-w-md p-14 absolute z-10 w-full md:w-[70%] lg:w-[60%] xl:w-[75%]'>
           <h3 className='text-violet-600 mb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>BACK TO SCHOOL</h3>
           <h2 className='mt-4 mb-4 text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>Special 50% Off</h2>
           <h3 className='text-2xl mb-6 mt-6 md:text-3xl lg:text-4xl xl:text-5xl'>for our student community</h3>
@@ -42,20 +42,20 @@ const MainBanner: FC = () => {
           </div>
         </div>
 
-        {/* Second SVG - Bottom Right */}
+        {/* Second SVG - Bottom Center */}
         <svg
           width={300}
           height={300}
           viewBox="-30 0 203 12"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute bottom-0 left-20 md:w-[4rem]"
+          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 md:w-[20rem]"
         >
           <circle cx={70} cy={118} r={98} fill="#F5DCC8" />
         </svg>
 
-        {/* Circles Image - Top Left */}
-        <img src={circles} alt="" className="w-[5rem] absolute bottom-20 left-40" />
+        {/* Circles Image - Bottom Center */}
+        <img src={circles} alt="" className="w-[5rem] absolute bottom-20 left-1/2 transform -translate-x-1/2" />
       </div>
 
       {/* Right Area (25%) */}

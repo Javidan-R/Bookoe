@@ -36,30 +36,39 @@ export const SpecialOffers: FC = () => {
     return (
         <>
             {speciaOffers.map((offer, index) => (
-                <div className='card' key={index} >
+                <div className='card shadow rounded rounded-[0.875rem] shadow-violet-300  ' key={index} >
                     <Image image={offer.image} />
-                    <div>
+                    <div className='p-[1rem]'>
                         <Title titleName={offer.titleName} />
                         <Tag tagName={offer.tagName.map((tag, index) => (
                             <li key={index}
-                                style={{ width: '2rem', margin: 'auto', cursor: 'pointer', listStyle: 'none' }}>
-                                {tag}
+                                style={{ listStyle: 'none', }}>
+                                     <Button
+                                className=" mt-2 mb-4  w-[4.9375rem] h-[1.8125rem] rounded-[0.875rem] bg-[#f0eeff]  "
+                            >
+                               {tag}
+                            </Button>
+                               
                             </li>
                         ))} />
                         <DescriptionOffers descName={offer.descName} />
                         <Author authorName={offer.authorName} />
                         <div className='flex justify-between pt-4'>
                             <Button
-                                style={{ color: '#6C5DD3' }}
+                                style={{ backgroundColor: '#6C5DD3' ,color:'#fff' }}
                                 className=" bg-gray-200  text-purple-500 font-bold py-2 px-4 rounded-xl "
                             >
                                 Add To Card
                             </Button>
+                            <div className='flex jutify-center items-center'>
                             <Button
                                 className="   text-purple-500 font-bold py-2 px-4 rounded-xl "
                             >
                                 20$
                             </Button>
+                            <p>50$</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>

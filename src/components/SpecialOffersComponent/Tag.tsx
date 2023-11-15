@@ -12,9 +12,9 @@ export const Tag: FC<TagProps> = ({ tagName }) => {
     fontStyle: "normal",
     fontWeight: 600,
     lineHeight: "normal",
-    display:'flex'
+    
 
   };
 
-  return <ul style={tagStyle}>{tagName}</ul>;
+  return <ul className='w-80  flex  justify-between' style={tagStyle}>{tagName}</ul>;
 };
