@@ -2,6 +2,10 @@ import { FC } from 'react';
 import energy from '../../../../assets/images/energy.svg';
 import approve from '../../../../assets/images/approve.svg';
 import star from '../../../../assets/images/star.svg';
+
+
+
+
 import thumb from '../../../../assets/images/thumb.svg';
 
 interface MainServicesProps {

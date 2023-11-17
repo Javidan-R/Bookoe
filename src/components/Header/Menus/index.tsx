@@ -34,7 +34,7 @@ export const Menus: FC = () => {
         {isOpen && (
           <div className="absolute right-0 mt-2 bg-violet-500 rounded-lg">
             <div className="py-2">
-              {['Home', 'Books Grid', 'Books List', 'Books Detail Description', 'Books Detail Review'].map((item, index) => (
+              {['Home', 'Books Grid', 'Books Detail Description', 'Books Detail Review' ].map((item, index) => (
                 <Link
                   key={index}
                   to={`/${item.toLowerCase().replace(/\s/g, '-')}`}

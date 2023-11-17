@@ -16,7 +16,7 @@ export const TestimonialsComponent = () => {
                     <div>
                         <div className="Sans'] text-[#3d3d3d] text-center font-['Open text-lg font-bold leading-[normal]">Steve Henry</div>
                         <div className="Sans'] text-[#3d3d3d] text-center font-['Open text-sm leading-[normal]">Book Lovers</div>
-                    </div>
+                    </div>  
                 </div>
                 <div>
                     <StarRating rating={4.8} />

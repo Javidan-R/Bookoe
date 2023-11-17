@@ -1,8 +1,14 @@
 
 // type Props = {}
 
+import { BookSale } from "../Home/BookSale"
+import { Testimonials } from "../Home/Testimonials"
+
 export const DetailReview = () => {
   return (
-    <div>DetailReview</div>
+    <div>
+        <Testimonials/>
+      <BookSale />
+    </div>
   )
 }

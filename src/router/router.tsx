@@ -10,7 +10,6 @@ import { AdminLayout } from '../features/layout/Admin';
 import { Dashboard } from '../pages/Admin';
 
 
-
 export const router = createBrowserRouter([
 	{
 		path: 'auth',
@@ -70,8 +69,8 @@ export const router = createBrowserRouter([
 				element: <Home />,
 			},
 			{
-				path: '/books-grid',
-				element: <>alknlkasnd</>
+				path: 'books-grid',
+				element: <Grid/>
 			},
 			{
 				path: 'books-list',

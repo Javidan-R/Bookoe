@@ -1,6 +1,11 @@
+import { BookSale } from "../Home/BookSale"
+import { Testimonials } from "../Home/Testimonials"
 
 export const DetailDescription = () => {
   return (
-    <div>DetailDescription</div>
+    <div>
+      <Testimonials/>
+      <BookSale />
+    </div>
   )
 }
