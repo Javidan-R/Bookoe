@@ -15,6 +15,7 @@ interface MainServicesProps {
 }
 
 const services = [
+    
     {
         heading: "Quick Delivery",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
