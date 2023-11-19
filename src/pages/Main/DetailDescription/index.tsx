@@ -1,11 +1,17 @@
+import React, { useState } from 'react'
 import { BookSale } from "../Home/BookSale"
 import { Testimonials } from "../Home/Testimonials"
 
 export const DetailDescription = () => {
+ 
+
+
   return (
     <div>
-      <Testimonials/>
+      <Testimonials />
       <BookSale />
+
+      
     </div>
   )
 }

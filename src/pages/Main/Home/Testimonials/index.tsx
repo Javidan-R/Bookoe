@@ -14,6 +14,7 @@ export const Testimonials = () => {
                 <TestimonialsComponent />
                 <TestimonialsComponent />
             </div>
+             
         </section>
 
     )
