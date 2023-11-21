@@ -1,6 +1,6 @@
 
 import { ReactNode, FC } from 'react';
-import { Login, Logo, Menus, Search, SignUp } from '../../../components/Header';
+import {  Logo } from '../../../components/Header';
 import { BooksCategories, FooterAbout, OutStore, QuickLinks, Subscribe } from '../../../components/Footer';
 import { FollowUs } from '../../../components/Footer/FollowUs';
 import { Home } from '../../../pages';

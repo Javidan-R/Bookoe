@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Button from '../../Atoms/Button';
 
-export const Login: FC = () => {
+export const LoginComponent: FC = () => {
   return (
     <>
       <Button

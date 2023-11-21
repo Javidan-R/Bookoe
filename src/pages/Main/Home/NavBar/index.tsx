@@ -1,6 +1,6 @@
 import React from 'react'
 import { Logo } from '../../../../components/LogoComponent'
-import { Login, Menus, Search, SignUp } from '../../../../components/Header'
+import { LoginComponent, Menus, SignUp } from '../../../../components/Header'
 
 export const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ export const Navbar = () => {
             <Menus />
 
           <div className=" flex flex-col  md:flex-row xl:flex-row items-start mt-4 md:mt-0 gap-6 ">
-            <Login  />
+            <LoginComponent/>
             <SignUp />
           </div>
         </div>
