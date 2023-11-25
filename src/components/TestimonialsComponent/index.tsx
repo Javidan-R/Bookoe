@@ -4,7 +4,7 @@ import StarRating from '../StarRating'
 
 export const TestimonialsComponent = () => {
     return (
-        <div className="background flex-shrink-0 w-[20rem] h-[12.9375rem] rounded-[0.875rem] bg-white shadow pt-2 pb-2  m-auto">
+        <div className="background flex-shrink-0 w-[20rem] h-[12.9375rem] rounded-[0.875rem] bg-white shadow pt-2 pb-2 my-4  m-auto">
             <div className="Sans'] flex-shrink-0 w-[18rem] h-[6rem] text-black text-center font-['Open text-[1.1rem] font-semibold leading-[normal] m-auto">Shoping book in Bookoe is very easy. Quick delivery and fast respon. They services is awesome!</div>
             <div className=' w-96 flex justify-start items-center gap-4 m-auto'>
                 <div className='flex justify-center  items-center '>

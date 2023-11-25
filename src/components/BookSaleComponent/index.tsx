@@ -36,6 +36,7 @@ export const BookSaleComponent: React.FC<BookSaleComponentProps> = ({
   }
   return (
     <>
+    
       <div className="flex-shrink-0 w-[13rem] md:w-[11rem] xl:w-[11rem] h-[30rem] m-auto   ">
         <div className="relative m-auto">
           <div className="flex-shrink-0 h-[18rem] rounded-[0.875rem] bg-[#c4c4c4]">
@@ -50,10 +51,10 @@ export const BookSaleComponent: React.FC<BookSaleComponentProps> = ({
           </div>
         </div>
 
-        <div className="text-[#11142d] font-['Cairo'] text-xl font-bold leading-[normal] mt-4 h-[5rem] ">
-          {shortenString(book.title, 40)} 
+        <div className="text-[#11142d] font-['Cairo'] text-xl font-bold leading-[normal] my-4 h-[5rem] ">
+          {shortenString(book.title, 50)} 
         </div>
-        <div className="['Sans'] text-[#6c5dd3] font-['Open text-sm leading-[normal] mb-4 ">
+        <div className="['Sans'] text-[#6c5dd3] font-['Open text-sm leading-[normal]  ">
           {book.category}
         </div>
         <div className="flex justify-evenly items-center">

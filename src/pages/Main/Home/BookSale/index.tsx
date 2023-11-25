@@ -1,17 +1,21 @@
+// BookSale.tsx
 import React, { FC, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
 import { BookSaleComponent } from '../../../../components/BookSaleComponent';
 import { useSelectorCustom } from '../../../../store/store';
 import { setBooks } from '../../../../store/books/book-slice';
 
+// Initialize Swiper core modules
+
 export const BookSale: FC = () => {
   const dispatch = useDispatch();
   const { books } = useSelectorCustom((state) => state.books);
-  const [data, setData] = useState([]); // Add a state variable to hold the fetched data
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      // Assuming your API endpoint for books is something like this
       const API_ENDPOINT = 'https://fakestoreapi.com/products';
 
       try {
@@ -22,34 +26,61 @@ export const BookSale: FC = () => {
 
         const fetchedData = await response.json();
 
-        // Update the local state with the fetched data
         setData(fetchedData);
-
-        // Dispatch the setBooks action with the fetched data
         dispatch(setBooks({ books: fetchedData }));
       } catch (error) {
         console.error('Error fetching data:', error.message);
       }
     };
 
-    // Call the fetchData function
     fetchData();
   }, [dispatch]);
 
   return (
     <section className='pt-10 m-auto'>
-      <div className="text-[#11142d] font-['Cairo'] text-[3.125rem] font-bold leading-[normal]">Books on Sale</div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 pt-12'>
-        {/* Render your BookSaleComponent based on the fetched data */}
-        {data.map((book) => (
-          <div key={book.id} className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.3333%-2rem)] xl:w-[calc(16.6667%-2rem)] mb-8 mx-1 flex items-strech content-strech">
-            <BookSaleComponent book={book} />
-          </div>
-        ))}
+      <div className="flex items-center justify-between mb-4">
+        <div className="text-[#11142d] font-['Cairo'] text-[3.125rem] font-bold leading-[normal]">Books on Sale</div>
+        
       </div>
+      <Swiper
+  spaceBetween={15}
+  pagination={{ clickable: true }}
+  autoplay={{ delay: 3000 }}
+  breakpoints={{
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+    },
+    780: {
+      slidesPerView: 3,
+    },
+    960: {
+      slidesPerView: 4,
+    },
+    1080: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 6,
+    },
+    // ... add more breakpoints as needed
+  }}
+>
+  {data.map((book) => (
+    <SwiperSlide key={book.id}>
+      <BookSaleComponent book={book} />
+    </SwiperSlide>
+  ))}
+</Swiper>
+
     </section>
   );
 };
-
-// Assuming you have a BookSaleComponent that receives a 'book' prop
-// Update this according to your actual component

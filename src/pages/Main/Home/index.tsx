@@ -56,7 +56,7 @@ export const Home: FC = () => {
 			</div>
 			<FlashSale/>
 			<BookSale />
-			<FeaturedBooks />
+			{/* <FeaturedBooks /> */}
 			<Testimonials/>
 			<LatestNews />
 			<NewsLetter />
