@@ -42,7 +42,9 @@ export const BookSale: FC = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 pt-12'>
         {/* Render your BookSaleComponent based on the fetched data */}
         {data.map((book) => (
-          <BookSaleComponent key={book.id} book={book} />
+          <div key={book.id} className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.3333%-2rem)] xl:w-[calc(16.6667%-2rem)] mb-8 mx-1 flex items-strech content-strech">
+            <BookSaleComponent book={book} />
+          </div>
         ))}
       </div>
     </section>
