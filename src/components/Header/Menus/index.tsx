@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import menuicon from '../../../assets/images/menuicon.svg';
 import rightchevron from '../../../assets/images/rightchevron.svg';
 import Input from '../../../Atoms/Input';
@@ -33,16 +33,16 @@ export const Menus: FC = () => {
         </div>
         {isOpen && (
           <div className="absolute right-0 mt-2 bg-violet-500 rounded-lg">
-            <div className="py-2">
+            <div className="py-2 ">
               {['Home', 'Books Grid', 'Books Detail Description', 'Books Detail Review' ].map((item, index) => (
-                <Link
+                <NavLink
                   key={index}
                   to={`/${item.toLowerCase().replace(/\s/g, '-')}`}
-                  className="block px-4 py-2 text-stone-900 hover:bg-gray-200"
+                  className="block px-4 py-2 text-stone-900 hover:bg-gray-200 active"
                   onClick={toggleMenu}
                 >
                   {item}
-                </Link>
+                </NavLink>
               ))}
             </div>
           </div>
