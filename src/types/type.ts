@@ -1,6 +1,5 @@
-export interface BooksTypes {
-    books:{
-        id: number,
+export type SingleBooksTypes={
+    id: number,
     title: string,
     price: number,
     category: string,
@@ -10,5 +9,9 @@ export interface BooksTypes {
         rate: number,
         count: number
     }
-    }[]
+}
+
+
+export interface BooksTypes {
+    books:SingleBooksTypes[]
 }
