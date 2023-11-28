@@ -29,7 +29,7 @@ export const BookSaleComponent: React.FC<BookSaleComponentProps> = ({ book }) =>
             className="w-full h-full object-cover rounded-t-lg"
           />
         </div>
-        <div className="absolute top-[1.5rem] left-0 w-[3.5rem] h-[2.375rem] rounded-tr-[1.25rem] rounded-bl-[1.25rem] bg-[#ff754c] text-center flex items-center justify-center text-white">
+        <div className="absolute top-[1.5rem] left-0 w-[3.5rem] h-[2.375rem] rounded-tr-[1.25rem] rounded-br-[1.25rem] bg-[#ff754c] text-center flex items-center justify-center text-white">
           {rate}%
         </div>
       </div>
