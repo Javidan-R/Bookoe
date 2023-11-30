@@ -10,7 +10,7 @@ const Logout = () => {
     localStorage.removeItem('role');
 
     // Redirect to the login page
-    navigate('/home');
+    navigate('/auth/login');
   };
 
   return (

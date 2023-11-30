@@ -4,14 +4,15 @@ import Features from './Features';
 import { MainServices } from './MainServices';
 import { Recomended } from './Recomanded';
 import { Popular } from './Popular';
-import { SpecialOffers } from '../../../components/SpecialOffersComponent';
-import { FlashCard } from '../../../components/FlashCardComponent';
+import { SpecialOffers } from './SpecialOffers';
 import { Testimonials } from './Testimonials';
 import { BookSale } from './BookSale';
 import { LatestNews } from './LatestNews';
 import { NewsLetter } from './NewsLetter';
 import { FlashSale } from './FlashSale';
+import { CartProvider } from "react-use-cart";
 import { FeaturedBooks } from './FeaturedBooks';
+
 
 export const Home: FC = () => {
 	return (
@@ -50,16 +51,17 @@ export const Home: FC = () => {
 
 					</div>
 				</div>
-				<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 pt-12'>
-					<SpecialOffers />
-				</div>
+				<CartProvider>
+				<SpecialOffers />	
+				</CartProvider>
+				
 			</div>
 			<FlashSale/>
 			<BookSale id={0} title={''} price={0} category={''} description={''} image={''} rating={{
 				rate: 0,
 				count: 0
 			}} />
-			{/* <FeaturedBooks /> */}
+			<FeaturedBooks />
 			<Testimonials/>
 			<LatestNews />
 			<NewsLetter />

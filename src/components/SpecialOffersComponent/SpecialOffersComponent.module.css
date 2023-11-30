@@ -1,0 +1,53 @@
+/* styles.module.css */
+
+.title {
+    width: 251.044px;
+    color: var(--DarkPurple, #11142D);
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+.tag {
+    color: var(--Primary, #6C5DD3);
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 1px 2px;
+}
+
+.desc {
+    width: 20rem;
+    height: 120px;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: auto;
+}
+
+.image {
+    width: 100%;
+    object-fit: contain;
+
+    height: 306px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background-color: transparent;
+    margin: auto;
+}
+
+.authorStyle {
+    color: var(--DarkPurple, #11142D);
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}

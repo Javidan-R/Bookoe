@@ -27,7 +27,7 @@ export const Menus: FC = () => {
             className="flex items-center justify-center text-sm font-medium text-blue border-orange-500 w-full"
           >
             <img src={menuicon} alt="menu icon" />
-            <Link to="/" className="block px-4 py-2 text-gray-800 text-lg">Menu</Link>
+            <Link to="/home" className="block px-4 py-2 text-gray-800 text-lg">Menu</Link>
             <img src={rightchevron} alt="" />
           </button>
         </div>

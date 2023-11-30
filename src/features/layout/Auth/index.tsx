@@ -3,13 +3,11 @@ import { Outlet } from 'react-router-dom';
 export const AuthLayout = () => {
 	return (
 		<>
-			<header>
-				<h1>this is auth layout</h1>
-			</header>
-			<main>
+			<main className='p-4 container m-auto ' style={{overflow:'hidden'}}>
 				<Outlet />
 			</main>
-			<footer>&copy; {new Date().getFullYear()}</footer>
+			<footer className='p-4 container m-auto'>&copy; {new Date().getFullYear()}</footer>
 		</>
 	);
 };
+ 

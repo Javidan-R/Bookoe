@@ -1,9 +1,13 @@
 import axios from 'axios';
 
-const HTTP = axios.create({
-    baseURL: "http://localhost:5173/",
-})
 
+const HTTP = axios.create({
+    baseURL: import.meta.env.VITE_BASE_URL,
+    headers: {
+      "Content-type": "application/json",
+      // Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  });
 export const GETAPIData = (url)=>{
     return HTTP.get(url);
 }

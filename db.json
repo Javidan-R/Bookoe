@@ -1,0 +1,33 @@
+{
+
+ "specialoffers" : [
+    {
+      "id":1,
+      "titleName": "SECONDS [Part I]",
+      "tagName": ["BIOGRAPHY", "THRILLER", "HORROR"],
+      "authorName": "Kevin Smiley",
+      "price":20,
+      "image": "https://caselibrary.com/cdn/shop/files/Death-note-book-case-remarkable-2_300x.png?v=1683287929",
+      "descName":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+    },
+    {
+      "id":2,
+      "titleName": "Terrible Madness",
+      "tagName": ["BIOGRAPHY", "THRILLER", "HORROR"],
+      "authorName": "David Here",
+      "price":20,
+      "image": "https://cdn.shopify.com/s/files/1/0315/1757/3164/products/how-design-makes-us-think-bdetails-bhardcoverbrbsize-b75-x-965-inbrbpages-b256brbpublication-date-b02232021brbrights-bnorth-americabr-sean-adams-308309_300x300.jpg?v=1613685830",
+      "descName":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+    },
+    {
+      "id":3,
+      "titleName": "REWORK",
+      "tagName": ["BIOGRAPHY", "THRILLER", "HORROR"],
+      "authorName": "Margaretha Helew",
+      "price":20,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdfYtCe35Y98daj0E5yTLUT9-bzL-5Q8zl2Q&usqp=CAU",
+      "descName":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+    }
+  ]
+}
