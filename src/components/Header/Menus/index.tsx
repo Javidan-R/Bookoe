@@ -27,14 +27,14 @@ export const Menus: FC = () => {
             className="flex items-center justify-center text-sm font-medium text-blue border-orange-500 w-full"
           >
             <img src={menuicon} alt="menu icon" />
-            <Link to="/home" className="block px-4 py-2 text-gray-800 text-lg">Menu</Link>
+            <Link to="/" className="block px-4 py-2 text-gray-800 text-lg">Menu</Link>
             <img src={rightchevron} alt="" />
           </button>
         </div>
         {isOpen && (
           <div className="absolute right-0 mt-2 bg-violet-500 rounded-lg">
             <div className="py-2 ">
-              {['Home', 'Books Grid', 'Books Detail Description', 'Books Detail Review' ].map((item, index) => (
+              {['Home', 'Books list', 'Book Detail Description', 'Book Detail Review' ].map((item, index) => (
                 <NavLink
                   key={index}
                   to={`/${item.toLowerCase().replace(/\s/g, '-')}`}

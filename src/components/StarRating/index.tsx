@@ -16,7 +16,7 @@ const StarRating: FC<StarRatingProps> = React.memo(({ rating }) => {
           className={`h-6 w-6 ${filled ? 'text-yellow-500' : 'text-gray-300'}`}
           fill="currentColor"
         >
-          <Star />
+          <Star rating={4} />
         </svg>
       ))}
       <span className="ml-2"></span>
