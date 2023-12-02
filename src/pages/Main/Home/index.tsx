@@ -12,8 +12,6 @@ import { NewsLetter } from './NewsLetter';
 import { FlashSale } from './FlashSale';
 import { CartProvider } from "react-use-cart";
 import { FeaturedBooks } from './FeaturedBooks';
-
-
 export const Home: FC = () => {
 	return (
 		<>
