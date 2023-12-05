@@ -1,26 +1,34 @@
 
-import { ReactNode, FC } from 'react';
+import { ReactNode, FC ,useContext , useEffect} from 'react';
 import {  Logo } from '../../../components/Header';
 import { BooksCategories, FooterAbout, OutStore, QuickLinks, Subscribe } from '../../../components/Footer';
 import { FollowUs } from '../../../components/Footer/FollowUs';
-import { Home } from '../../../pages';
 import { Outlet } from 'react-router-dom';
 import { Navbar } from '../../../pages/Main/Home/NavBar';
+import { ThemeContext } from '../../../context/ThemeContext';
+
 
 interface MainLayoutProps {
   children: ReactNode;
 }
 
 export const MainLayout: FC<MainLayoutProps> = ({ children }) => {
+  const {theme , ChangeMood} = useContext(ThemeContext)
+  useEffect(()=>{
+    document.body.className= theme
+  },[theme])
   return (
     <>
-      <Navbar/>
+    <div className={theme}>
+
+   
+     <Navbar ChangeMood ={ChangeMood} />
       <main className="p-4 md:p-6 xl:p-12">
         {children}
         <Outlet/>
       </main>
 
-      <footer className="p-4 md:p-6 xl:p-12 ">
+      <footer className= "p-4 md:p-6 xl:p-12"    >
       <Subscribe />
 
         <div className="container mx-auto md:p-0 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -43,7 +51,7 @@ export const MainLayout: FC<MainLayoutProps> = ({ children }) => {
           </div>
         </div>
       </footer>
-
+      </div>
     </>
   );
 };

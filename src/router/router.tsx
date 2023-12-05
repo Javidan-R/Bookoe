@@ -8,6 +8,8 @@ import { AuthLayout } from '../features/layout/Auth';
 import { Login } from '../pages/Auth';
 import { AdminLayout } from '../features/layout/Admin';
 import { Dashboard } from '../pages/Admin';
+import { ThemeContext, ThemeProvider } from '../context/ThemeContext';
+
 
 
 export const router = createBrowserRouter([
@@ -57,9 +59,11 @@ export const router = createBrowserRouter([
 		path: '/',
 		element: (
 			<ProtectedRoute expectedRole={Role.USER} redirectPath='/auth/login'>
+			<ThemeProvider>
 				<MainLayout >
-
 				</MainLayout>
+			</ThemeProvider>
+				
 			</ProtectedRoute>
 		),
 		errorElement: <h1>User Not Found</h1>,

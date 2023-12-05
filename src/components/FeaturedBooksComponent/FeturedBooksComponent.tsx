@@ -48,7 +48,7 @@ export const FeturedBooksComponent: FC<FeaturedBooksProps> = ({ image, bookName,
                 <div className="text-[#11142d] text-center font-['Cairo'] text-[1.75rem] font-bold leading-[normal]">$ {price}</div>
                 <div className="text-[#aaa] text-center font-['Cairo'] text-xl font-semibold leading-[normal]">${oldPrice}</div>
             </div>
-            <Button style={{}} className='' >ADD</Button>
+            <Button>ADD</Button>
         </div>
     </div>
 

@@ -2,7 +2,7 @@ import React, { ButtonHTMLAttributes, CSSProperties, ReactNode } from 'react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  className:string;
+  className?:string;
   style? : CSSProperties;
 }
 const Button: React.FC<ButtonProps> = ({ className, style ,children, ...props }) => {

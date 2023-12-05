@@ -1,7 +1,12 @@
+import { FC} from 'react';
 import { Logo } from '../../../../components/LogoComponent'
 import { LoginComponent, Menus, SignUp } from '../../../../components/Header'
 
-export const Navbar = () => {
+interface NavbarProps{
+  ChangeMood:()=>void;
+}
+export const Navbar:FC<NavbarProps> = ({ChangeMood}) => {
+
   return (
     <>
         <header className="p-4 md:p-6 xl:p-12">
@@ -12,6 +17,8 @@ export const Navbar = () => {
             <LoginComponent/>
             <SignUp />
           </div> */}
+          <button className='bg-indigo-500 rounded-[14px] px-2' onClick={ChangeMood}>Change mood</button>
+
         </div>
       </header>
 
