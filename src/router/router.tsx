@@ -1,6 +1,6 @@
 // router.tsx
 import { createBrowserRouter, Navigate, Outlet } from 'react-router-dom';
-import { Checkout, DetailDescription, DetailReview, Grid, Home, List } from '../pages';
+import { Checkout, DetailDescription, DetailReview, Home,Books  } from '../pages';
 import { MainLayout } from '../features/layout';
 import { Role } from '../models';
 import { ErrorBoundary, ProtectedRoute } from '../features';
@@ -60,7 +60,7 @@ export const router = createBrowserRouter([
 		element: (
 			<ProtectedRoute expectedRole={Role.USER} redirectPath='/auth/login'>
 			<ThemeProvider>
-				<MainLayout >
+				<MainLayout children={''} >
 				</MainLayout>
 			</ThemeProvider>
 				
@@ -73,12 +73,8 @@ export const router = createBrowserRouter([
 				element: <Home />,
 			},
 			{
-				path: 'books-grid',
-				element: <Grid/>
-			},
-			{
-				path: 'books-list',
-				element: <List />
+				path: 'books',
+				element: <Books/>
 			},
 			{
 				path: 'book-detail-description',

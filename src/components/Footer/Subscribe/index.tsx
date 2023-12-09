@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 export const Subscribe: FC = () => {
   return (
-    <div className='w-full flex justify-center mt-6 mb-6'>
+    <div className='w-96 flex justify-center mt-6 mb-6'>
       <div className='flex-shrink-0 max-w-[693px] w-full bg-[#6c5dd3] rounded-[0.875rem] p-4'>
         <h1 className='text-white text-center  text-2xl font-semibold mb-4'>
           Subscribe to our newsletter for the latest updates on new books

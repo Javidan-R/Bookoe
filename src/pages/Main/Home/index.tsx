@@ -11,7 +11,7 @@ import { LatestNews } from './LatestNews';
 import { NewsLetter } from './NewsLetter';
 import { FlashSale } from './FlashSale';
 import { CartProvider } from "react-use-cart";
-import { FeaturedBooks } from './FeaturedBooks';
+// import { FeaturedBooks } from './FeaturedBooks';
 export const Home: FC = () => {
 	return (
 		<>
@@ -55,11 +55,8 @@ export const Home: FC = () => {
 				
 			</div>
 			<FlashSale/>
-			<BookSale id={0} title={''} price={0} category={''} description={''} image={''} rating={{
-				rate: 0,
-				count: 0
-			}} />
-			<FeaturedBooks />
+			<BookSale  />
+			{/* <FeaturedBooks /> */}
 			<Testimonials/>
 			<LatestNews />
 			<NewsLetter />

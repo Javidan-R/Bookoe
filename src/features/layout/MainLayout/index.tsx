@@ -1,7 +1,7 @@
 
 import { ReactNode, FC ,useContext , useEffect} from 'react';
 import {  Logo } from '../../../components/Header';
-import { BooksCategories, FooterAbout, OutStore, QuickLinks, Subscribe } from '../../../components/Footer';
+import { BooksCategories, FooterAbout, OutStore, QuickLinks } from '../../../components/Footer';
 import { FollowUs } from '../../../components/Footer/FollowUs';
 import { Outlet } from 'react-router-dom';
 import { Navbar } from '../../../pages/Main/Home/NavBar';
@@ -29,7 +29,7 @@ export const MainLayout: FC<MainLayoutProps> = ({ children }) => {
       </main>
 
       <footer className= "p-4 md:p-6 xl:p-12"    >
-      <Subscribe />
+      {/* <Subscribe /> */}
 
         <div className="container mx-auto md:p-0 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="w-full md:w-1/4 mb-6 md:mb-0 mr-5">
