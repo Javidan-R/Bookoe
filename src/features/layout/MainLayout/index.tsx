@@ -9,7 +9,7 @@ import { ThemeContext } from '../../../context/ThemeContext';
 
 
 interface MainLayoutProps {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const MainLayout: FC<MainLayoutProps> = ({ children }) => {

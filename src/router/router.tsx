@@ -60,7 +60,7 @@ export const router = createBrowserRouter([
 		element: (
 			<ProtectedRoute expectedRole={Role.USER} redirectPath='/auth/login'>
 			<ThemeProvider>
-				<MainLayout children={''} >
+				<MainLayout >
 				</MainLayout>
 			</ThemeProvider>
 				
