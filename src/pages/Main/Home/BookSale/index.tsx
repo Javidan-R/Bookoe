@@ -78,7 +78,7 @@ export const BookSale: FC = () => {
         }}
       >
         {data.map((book: SingleBooksTypes) => (
-          <SwiperSlide key={book.id}>
+          <SwiperSlide key={book.id} style={{borderRadius:'14px'}}>
             <BookSaleComponent book={book} />
           </SwiperSlide>
         ))}
