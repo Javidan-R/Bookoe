@@ -30,15 +30,13 @@ export const services = [
 ];
 
 export const Books = () => {
-  const [data, setData] = useState(services);
   const [isOpenEditorPicks, setIsOpenEditorPicks] = useState(false);
   const [isOpenPublisher, setIsOpenPublisher] = useState(false);
   const [isOpenYear, setIsOpenYear] = useState(false);
   const [isOpenCategory, setIsOpenCategory] = useState(false);
-  const [view, setView] = useState(""); 
+  const [view, setView] = useState("grid"); 
 
-  const handleToggleEditorPicks = () =>
-    setIsOpenEditorPicks(!isOpenEditorPicks);
+  const handleToggleEditorPicks = () => setIsOpenEditorPicks(!isOpenEditorPicks);
   const handleTogglePublisher = () => setIsOpenPublisher(!isOpenPublisher);
   const handleToggleYear = () => setIsOpenYear(!isOpenYear);
   const handleToggleCategory = () => setIsOpenCategory(!isOpenCategory);
