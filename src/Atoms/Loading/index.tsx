@@ -1,6 +1,4 @@
-import React from "react";
 import { RotatingLines } from "react-loader-spinner";
-
 export const LoadingSusponse = ({
   color,
   stroke,
@@ -20,3 +18,4 @@ export const LoadingSusponse = ({
     />
   );
 };
+
